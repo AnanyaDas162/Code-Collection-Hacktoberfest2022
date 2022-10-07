@@ -3,6 +3,7 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <br>
 <h1>Hacktober Fest 2022 For Everyone!</h1>
 <br>
+<img src = "" alt= "Its time to contribute!!" height = "100vh" width = "100%">
 <h1>Upload your Projects or DSA related Programs in any Language</h1>
 <h6>Use this project to make your first contribution to an open source project on GitHub!!</h6>
 <br>
@@ -24,3 +25,12 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <h6>Once you have completed these steps, you are ready to start contributing by clicking on Create Pull Request.</h6>
 <h3>5. Give this Project a Star:</h3>
 <h6>If you liked working on this project, please share this project as much as you can and star this project to help as many people in opensource as you can.</h6>
+<h1>Notes :: </h1>
+<h6>1. Don't Create Pull Request to update "readme.md" File.</h6>
+<h6>2. Upload or Create File in Specified Language Folder.</h6>
+<h6>3. If Specified Language Folder not Found then Create Folder and then Upload or Create File.</h6>
+<h6>4. In case you need to add an external package, install it by using npm. Don't push the complete package file here.</h6>
+<h6></h6>
+<h6></h6>
+<h6></h6>
+<h6></h6>
