@@ -10,10 +10,12 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <h1>What is Hacktoberfest?</h1>
 <h6>Hacktoberfest is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open source projects.</h6>
 <br>
-<img src="https://github.com/AnanyaDas162/Data-Structures-and-Algorithms/blob/main/Images/github-logo-octocat-.gif" style="display:flex;">
+<img src="https://github.com/AnanyaDas162/Data-Structures-and-Algorithms/blob/main/Images/github-logo-octocat-.gif" style="display:flex; justify-content:center;">
 <br>
 <h1>Why should you contribute for Hacktoberfest??</h1>
 <h6>It encourages developers and also beginners to contribute to open source projects and practice programming by participating in solving problems across projects.</h6>
+<br>
+<img src="https://github.com/AnanyaDas162/Data-Structures-and-Algorithms/blob/main/Images/why-contribute.gif">
 <br>
 <h1>How to participate??</h1>
 <h3>Steps to follow:</h3>
@@ -36,3 +38,4 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <h6></h6>
 <h6></h6>
 <h6></h6>
+<img src = "https://github.com/AnanyaDas162/Data-Structures-and-Algorithms/blob/main/Images/code.avif" >
