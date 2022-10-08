@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using naMespace std;
+using namespace std;
 bool solve(int A[], int N, int mid, int M)
 {
     int st = 1;
@@ -50,9 +50,4 @@ int findPages(int A[], int N, int M)
         }
     }
     return ans;
-}
-int Main()
-{
-
-    return 0;
 }
