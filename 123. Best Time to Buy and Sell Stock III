@@ -1,0 +1,112 @@
+package com.leetcode.besttimetobuyandsellstockthree;
+
+/**
+ * LeetCode Problem #123: Best Time to Buy and Sell Stock III.
+ * <p>
+ * You are given an array prices where prices[i] is the price of a given stock on the ith day.
+ * Find the maximum profit you can achieve. You may complete at most two transactions.
+ * <p>
+ * Note: You may not engage in multiple transactions simultaneously
+ * (i.e., you must sell the stock before you buy again).
+ * <p>
+ * Constraints:
+ * 1 <= prices.length <= 10^5
+ * 0 <= prices[i] <= 10^5
+ */
+public class BestTimeToBuyAndSellStockThree {
+
+    /**
+     * Given an array of daily prices, return the maximum profit of two transactions.
+     * Time Complexity: O(n), where n is the length of the array.
+     * Space Complexity: O(1).
+     *
+     * @param prices An array of integers of daily prices.
+     * @return An integer of the maximum profit by making two transactions.
+     */
+    public int getMaxProfitWithBottomUpDynamicProgrammingV2(int[] prices) {
+        int numTransactions = 2;
+        int[][] profits = new int[numTransactions + 1][2];
+        for (int i = prices.length - 1; i >= 0; i--) {
+            for (int j = 1; j <= numTransactions; j++) {
+                profits[j][0] = Math.max(profits[j][1] - prices[i], profits[j][0]);
+                profits[j][1] = Math.max(prices[i] + profits[j - 1][0], profits[j][1]);
+            }
+        }
+        return profits[2][0];
+    }
+
+    /**
+     * Given an array of daily prices, return the maximum profit of two transactions.
+     * Time Complexity: O(n), where n is the length of the array.
+     * Space Complexity: O(n).
+     *
+     * @param prices An array of integers of daily prices.
+     * @return An integer of the maximum profit by making two transactions.
+     */
+    public int getMaxProfitWithBottomUpDynamicProgramming(int[] prices) {
+        int numTransactions = 2;
+        int[][][] profits = new int[prices.length + 1][numTransactions + 1][2];
+        for (int i = prices.length - 1; i >= 0; i--) {
+            for (int j = 1; j <= numTransactions; j++) {
+                profits[i][j][0] = Math.max(profits[i + 1][j][1] - prices[i], profits[i + 1][j][0]);
+                profits[i][j][1] = Math.max(prices[i] + profits[i + 1][j - 1][0], profits[i + 1][j][1]);
+            }
+        }
+        return profits[0][2][0];
+    }
+
+    /**
+     * Given an array of daily prices, return the maximum profit of two transactions.
+     * Time Complexity: O(n), where n is the length of the array.
+     * Space Complexity: O(n).
+     *
+     * @param prices An array of integers of daily prices.
+     * @return An integer of the maximum profit by making two transactions.
+     */
+    public int getMaxProfitWithTopDownDynamicProgramming(int[] prices) {
+        Integer[][][] profits = new Integer[prices.length][3][2];
+        return getMaxProfitWithTopDownDynamicProgramming(prices, profits, 0, 2, 0);
+    }
+
+    private int getMaxProfitWithTopDownDynamicProgramming(int[] prices, Integer[][][] profits, int date, int numTransLeft, int isOpened) {
+        if (date == prices.length || numTransLeft == 0) return 0;
+        else if (profits[date][numTransLeft][isOpened] != null) return profits[date][numTransLeft][isOpened];
+        else if (isOpened == 0) {
+            int profitBuy = getMaxProfitWithTopDownDynamicProgramming(prices, profits, date + 1, numTransLeft, 1) - prices[date];
+            int profitSkip = getMaxProfitWithTopDownDynamicProgramming(prices, profits, date + 1, numTransLeft, 0);
+            profits[date][numTransLeft][isOpened] = Math.max(profitBuy, profitSkip);
+        } else {
+            int profitSold = prices[date] + getMaxProfitWithTopDownDynamicProgramming(prices, profits, date, numTransLeft - 1, 0);
+            int profitHold = getMaxProfitWithTopDownDynamicProgramming(prices, profits, date + 1, numTransLeft, 1);
+            profits[date][numTransLeft][isOpened] = Math.max(profitSold, profitHold);
+        }
+        return profits[date][numTransLeft][isOpened];
+    }
+
+    /**
+     * Given an array of daily prices, return the maximum profit of two transactions.
+     * Time Complexity: O(2 ^ n), where n is the length of the array.
+     * Space Complexity: O(n).
+     *
+     * @param prices An array of integers of daily prices.
+     * @return An integer of the maximum profit by making two transactions.
+     */
+    public int getMaxProfitWithRecursion(int[] prices) {
+        return getMaxProfitWithRecursion(prices, 0, 2, false);
+    }
+
+    private int getMaxProfitWithRecursion(int[] prices, int date, int numTransLeft, boolean isOpened) {
+        if (date == prices.length || numTransLeft == 0) return 0;
+
+        if (isOpened) {
+            int profitSold = prices[date] + getMaxProfitWithRecursion(prices, date + 1, numTransLeft - 1, false);
+            int profitHold = getMaxProfitWithRecursion(prices, date + 1, numTransLeft, true);
+            return Math.max(profitSold, profitHold);
+        } else {
+            int profitBuy = getMaxProfitWithRecursion(prices, date + 1, numTransLeft, true) - prices[date];
+            int profitSkip = getMaxProfitWithRecursion(prices, date + 1, numTransLeft, false);
+            return Math.max(profitBuy, profitSkip);
+        }
+
+    }
+}
