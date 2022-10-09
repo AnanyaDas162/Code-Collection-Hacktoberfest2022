@@ -25,7 +25,6 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <a href="https://hacktoberfest.com/">Register Here</a>
 <h3>2. Add Project/Program in any Language you like:</h3>
 <h6>Add any of your simple or complex Project/Program in any language you like in this repository by clicking "Add File -> Create new File".</h6>
-<h3>3. Mention your name in the contributors.html file</h3>
 
 <h3>4. Create Pull Request:</h3>
 <h6>Once you have completed these steps, you are ready to start contributing by clicking on Create Pull Request.</h6>
@@ -33,9 +32,10 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <h6>If you liked working on this project, please share this project as much as you can and star this project to help as many people in opensource as you can.</h6>
 <h1>📝📝Notes :: 📝📝</h1>
 <h6>1. Don't Create Pull Request to update "readme.md" File.</h6>
-<h6>2. Upload or Create File in Specified Language Folder.</h6>
-<h6>3. If Specified Language Folder not Found then Create Folder and then Upload or Create File.</h6>
+<h6>2. Upload or Create File in Specified Folders.</h6>
+<h6>3. If Specified Folder not Found then Create Folder and then Upload or Create File.</h6>
 <h6>4. In case you need to add an external package, install it by using npm. Don't push the complete package file here.</h6>
+<h6>5. If you are uploading a Leetcode / GFG problem, then please mention it and upload it in the corresponding folder. And also give the file name same as the problem name.</h6>
 <h6></h6>
 <h6></h6>
 <h6></h6>
