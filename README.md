@@ -40,4 +40,11 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <h6></h6>
 <h6></h6>
 <h6></h6>
+<h1>Contributors :: </h1>
+<br>
+<a href="https://github.com/AnanyaDas162/Data-Structures-Algorithms-And-any-other-project-Hacktoberfest2022/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AnanyaDas162/Data-Structures-Algorithms-And-any-other-project-Hacktoberfest2022" />
+</a>
+<h6>Thanks for contributing. It's an amazing experience to collaborate with you all!</h6>
+<br>
 <img src = "https://github.com/AnanyaDas162/Data-Structures-and-Algorithms/blob/main/Images/code.avif" >
