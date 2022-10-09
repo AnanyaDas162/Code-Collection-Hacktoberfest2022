@@ -35,7 +35,9 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <h6>2. Upload or Create File in Specified Folders.</h6>
 <h6>3. If Specified Folder not Found then Create Folder and then Upload or Create File.</h6>
 <h6>4. In case you need to add an external package, install it by using npm. Don't push the complete package file here.</h6>
-<h6>5. If you are uploading a Leetcode / GFG problem, then please mention it and upload it in the corresponding folder. And also give the file name same as the problem name.</h6>
+<h3>
+      5. If you are uploading a Leetcode / GFG problem, then please mention it and upload it in the corresponding folder. And also give the file name same as the problem name.
+</h3>
 <h6></h6>
 <h6></h6>
 <h6></h6>
