@@ -1,0 +1,22 @@
+class Solution {
+    public int[] plusOne(int[] digits) {
+        int carry = 1;
+        int idx = digits.length - 1;
+        
+        do {
+            int sum = carry + digits[idx];
+            carry = sum/10;
+            digits[idx] = sum%10;
+            idx--;
+        } while(idx >=0 && carry > 0);
+        
+        if(carry == 0) return digits;
+        
+        int[] newArr = new int[digits.length + 1];
+        newArr[0] = carry;
+        for(int i=1; i<newArr.length; i++) {
+            newArr[i] = digits[i-1];
+        }
+        return newArr;
+    }
+}
