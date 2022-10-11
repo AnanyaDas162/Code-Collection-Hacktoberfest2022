@@ -1,4 +1,4 @@
-# Data-Structures-Algorithms-and-any-other-project
+# Code-Collection-hacktoberfest2022
 This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <br>
 <h1>Hacktober Fest 2022 For Everyone!👋👋</h1>
