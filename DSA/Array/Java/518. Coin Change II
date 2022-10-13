@@ -1,0 +1,26 @@
+class Solution {
+	public int change(int amount, int[] coins) {
+		if(coins == null || coins.length == 0) return 0;
+
+		return helper(coins, amount, 0, 0);
+	}
+
+	private int helper(int[] coins, int amount, int index, int combinations) {
+
+		if(index >= coins.length || amount < 0)
+			return 0;
+
+		if(amount == 0){
+			combinations++;
+			return combinations;
+		}
+
+		// if you do not choose a coin
+		int case1 = helper(coins, amount, index + 1, combinations);
+
+		// if you not choose a coin
+		int case2 = helper(coins, amount - coins[index], index, combinations);
+
+		return case1 + case2;
+	}
+}
