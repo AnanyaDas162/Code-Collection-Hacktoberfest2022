@@ -1,0 +1,29 @@
+ public boolean searchMatrix(int[][] matrix, int target) {
+        int row = matrix.length;
+        int col = matrix[0].length;
+        
+        int RI = 0;
+        int CI = col-1;
+        while(RI=0)
+        {
+
+            int ele = matrix[RI][CI];
+            if(ele == target)
+            {
+                return true;
+            }
+            
+            if(ele < target)
+            {
+                RI++;
+            }
+            
+            else {
+               CI--;
+                
+            }
+        }
+        return false;
+        
+    }
+}
