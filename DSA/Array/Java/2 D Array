@@ -1,0 +1,49 @@
+import java.util.Scanner;  
+
+publicclass TwoDArray {  
+
+publicstaticvoid main(String[] args) {  
+
+    int[][] arr = newint[3][3];  
+
+    Scanner sc = new Scanner(System.in);  
+
+    for (inti =0;i<3;i++)  
+
+    {  
+
+        for(intj=0;j<3;j++)  
+
+        {  
+
+            System.out.print("Enter Element");  
+
+            arr[i][j]=sc.nextInt();  
+
+            System.out.println();  
+
+        }  
+
+    }  
+
+    System.out.println("Printing Elements...");  
+
+    for(inti=0;i<3;i++)  
+
+    {   
+
+        System.out.println();  
+
+        for(intj=0;j<3;j++)  
+
+        {  
+
+            System.out.print(arr[i][j]+"\t");  
+
+        }  
+
+    }  
+
+}  
+
+}  
