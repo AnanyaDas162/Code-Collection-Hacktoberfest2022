@@ -1,0 +1,20 @@
+.text-center{
+    text-align: center;
+}
+.mx-auto{
+    margin: auto;
+}
+/* set the Calculator block */
+.flex{
+    display: flex;
+    background-image: linear-gradient( to bottom right, rgb(220, 60, 12),rgb(78, 150, 168));
+    border-radius: 25px;
+    width: 300px;
+}
+.flex-col{
+    flex-direction: column;
+}
+.item-center{
+    align-items: center;
+    justify-content: center;
+}
