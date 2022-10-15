@@ -1,0 +1,9 @@
+class Solution {
+	public String multiply(String s1, String s2) {
+	    java.math.BigInteger a =new java.math.BigInteger(s1);
+        java.math.BigInteger b =new java.math.BigInteger(s2);
+        b = b.multiply(a);
+        return b.toString();
+	}
+
+}
