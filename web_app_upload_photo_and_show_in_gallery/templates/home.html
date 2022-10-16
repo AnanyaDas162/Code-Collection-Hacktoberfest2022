@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="div1">
+
+        <p class="paraheads"><b>DUMMY DUMMY DUMMYS</b> 
+            <br></p>
+            <pre></pre>
+        <p class="para">
+            Climate change is a long-term change in the average weather patterns that have come to define Earth’s local, regional and global climates. These changes have a broad range of observed effects that are synonymous with the term.
+            Changes observed in Earth’s climate since the mid-20th century are driven by human activities, particularly fossil fuel burning, which increases heat-trapping greenhouse gas levels in Earth’s atmosphere, raising Earth’s average surface temperature. Natural processes, which have been overwhelmed by human activities, can also contribute to climate change, including internal variability (e.g., cyclical ocean patterns like El Niño, La Niña and the Pacific Decadal Oscillation) and external forcings (e.g., volcanic activity, changes in the Sun’s energy output, variations in Earth’s orbit).
+            Scientists use observations from the ground, air, and space, along with computer models, to monitor and study past, present, and future climate change. Climate data records provide evidence of climate change key indicators, such as global land and ocean temperature increases; rising sea levels; ice loss at Earth’s poles and in mountain glaciers; frequency and severity changes in extreme weather such as hurricanes, heatwaves, wildfires, droughts, floods, and precipitation; and cloud and vegetation cover changes.
+        </p>
+
+        <p class="paraheads">
+            <b>Photo challange</b>
+            <pre></pre>
+        <p class="para">
+            add an Image that shows natural life that has impact from global heat  and earn a digital badge 
+        </p>
+    </div>
+
+    <div id="flexbox">
+        <div class="banner">
+            <h3 id="h3">Add your Image here</h3>
+            <pre></pre>
+            <p class="para1">hit the click me button your Image is help us to focus the whole world</p>
+            <form action="{{ url_for('upload_page') }}" style="margin-left: 37%;">
+                <button  id="add_image_btn" type="submit"> Click me</button>
+            </form>
+        </div>  
+    </div> 
+
+    <style>
+            .div1 {
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 15px );
+                -webkit-backdrop-filter: blur( 12px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                margin: 2% 1% 1% 1%;
+            }
+
+            .paraheads {
+                text-align: center;
+                font-size: 200%;
+                font-family: 'Segoe UI';
+            }
+
+            .para {
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                font-weight: 600;
+                font-size: 125%;
+                color: rgb(0, 0, 0);
+                font-family:'Segoe UI';
+            }
+
+            #flexbox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0% 1% 1% 1%;
+            }
+            
+
+            .banner {
+                margin-top: 2%;
+                align-self: center;
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 15px );
+                -webkit-backdrop-filter: blur( 12px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                align-content: center;
+            }
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1%;
+                
+            }
+
+            #add_image_btn { 
+                height: 4em;
+                width: 12em;
+                font-family: 'Segoe UI';
+                font-weight: 600;
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 20px );
+                -webkit-backdrop-filter: blur( 20px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                align-content: center;
+                color: #ffffff;
+                margin-bottom: 2%;
+            }
+
+            #add_image_btn:hover {
+                background-color: rgba(255, 179, 16, 0.274);
+                color: rgb(255, 140, 9);
+                border-color: rgb(255, 177, 31);
+            }
+
+            #h3 {
+                margin-top: 2%;
+                font-size: 2em;
+                font-family: 'Segoe UI';
+                text-align: center ;
+                color: #ffffff;
+            }
+
+            #footer {
+                margin-top: 2%;
+                text-align: center;
+                margin-bottom: 1%;
+                font-weight: 800;
+                color: aliceblue;
+            }
+
+            .para1{
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                font-weight: 600;
+                font-size: 125%;
+                color: rgb(255, 255, 255);
+                font-family:'Segoe UI';
+            }
+
+    </style>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body class="text-center">   
+    <div class="container">
+        
+        <form method="POST" class="form-register" style="color:azure;" enctype="multipart/form-data"><!--POST request kind a request that affwct database   enttype is necesssery-->
+
+            {{ form.hidden_tag() }}  <!--prevent common hacking method CROSS SITE REQUEST FORGE(CSRF)-->
+            
+            <!--<img class="mb-sm-0" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt="">-->
+            <h3 style="margin-top:1%">Please Create Your Account</h3>
+            <br>
+
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User name")}} <!--bootstrap class-->
+            
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="Email Address")}}
+
+            <label for="img">Select image :</label>
+            <input type="file" id="img" name="pic" accept="image/*">
+            
+            {{ form.submit(class="btn btn-lg btn-block btn-primary")}}
+        </form> 
+    </div> 
+</body> 
+{% endblock %}

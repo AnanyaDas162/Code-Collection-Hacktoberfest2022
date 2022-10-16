@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="div2">
+    <p class="missionhead"><b>OUR MISSION</b> 
+        <br></p>
+        <pre></pre>
+    <p class="missionpara">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin
+    </p>
+</div>
+
+<div id="team">
+    <div class="member">
+        <div class="memberphoto">
+
+        </div>
+        <div class="memberdescription">
+
+        </div>
+    </div>
+</div>
+<style>
+
+
+    #Galleryhead, #aboutushead {
+        margin-bottom: 2%;
+        background-color: white;
+        font-family: 'Segoe UI';
+        border-radius: 10px;
+        font-size: 1cm;
+        padding-right: 1em;;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        padding-left: 5%;
+    }
+
+    #gallerytopic , #aboutustopic{
+        text-align: right;
+        font-family: 'Segoe UI';
+        color: rgb(209, 140, 12);
+        font-weight: 700;
+    }
+
+
+    /**--------------------------------------------**/
+
+    #div2 , #team {
+        margin : 2% 1% 1% 1%;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        -webkit-backdrop-filter: blur( 12px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    .missionhead {
+        margin-top: 1%;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Segoe UI';
+        color: aliceblue;
+    }
+
+    .missionpara {
+        
+        text-align: center;
+        padding-left: 4em;
+        padding-right: 4em;
+        font-weight: 600;
+        font-size: 125%;
+        color: rgb(0, 0, 0);
+        font-family:'Segoe UI';
+    }
+
+
+</style>
+{% endblock %}
