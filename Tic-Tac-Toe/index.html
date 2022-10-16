@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!-- for the  upper bar -->
+    <nav>
+        <ul>
+            <li>Tic Tac Toe</li>
+        </ul>
+    </nav>
+    <!-- total game set-up -->
+    <div class="gameContainer">
+        
+        <div class="Container">
+            <div class="line"></div>
+            <!-- Tic Tac Toe boxes -->
+            <div class="box borderTop borderLeft"><span class="boxtext"></span></div>
+            <div class="box borderTop"><span class="boxtext"></span></div>
+            <div class="box borderTop borderRight"><span class="boxtext"></span></div>
+
+            <div class="box borderLeft"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box borderRight"><span class="boxtext"></span></div>
+
+            <div class="box borderBottom borderLeft"><span class="boxtext"></span></div>
+            <div class="box borderBottom"><span class="boxtext"></span></div>
+            <div class="box borderBottom borderRight"><span class="boxtext"></span></div>
+        </div>
+        <!-- All informations of the game -->
+        <div class="gameInfo">
+            <h1>Welcome to Tic-Tac-Toe</h1>
+            <div>
+                <span class="info">Turn For X</span>
+                <button id="reset">Reset</button>
+            </div>
+            <!-- Game Over image -->
+            <div class="image">
+                <img src="dance.gif" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
