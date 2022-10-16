@@ -1,0 +1,75 @@
+/* CSS Reset */
+body {
+  position: relative;
+  background-image: linear-gradient(#ffd89b 40%,#19547b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #19547b;
+}
+/* For displaytime */
+#displayTime {
+  position: absolute;
+  height: 5vw;
+  width: 35vw;
+  left: 32%;
+  bottom: -30%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #19547b;
+  font-size: 2rem;
+}
+#Alarm{
+  position: absolute;
+  height: 5vw;
+  width: 45vw;
+  left: 30%;
+  bottom: -20%;
+  margin: auto;
+}
+label {
+	display:inline-block;
+}
+#Stop,#set{
+  cursor: pointer;
+}
+/* For Clock */
+#clock {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background: url(clock.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: auto;
+}
+#hours {
+  position: absolute;
+  height: 28%;
+  width: 1.5%;
+  top: 23%;
+  left: 49.27%;
+  background-color: red;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
+#minutes {
+  position: absolute;
+  height: 31%;
+  width: 1%;
+  top: 19%;
+  left: 49.5%;
+  background-color: blue;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
+#seconds {
+  position: absolute;
+  height: 38%;
+  width: 0.8%;
+  top: 13%;
+  left: 49.59%;
+  background-color: green;
+  opacity: 0.8;
+  transform-origin: bottom;
+}
