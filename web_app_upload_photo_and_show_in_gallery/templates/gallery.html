@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="Imagegroup">
+    {% for pic in pics %}
+    <div class="image">
+        <div class="photo">
+            <img src="{{ url_for('static', filename='uploads/' + pic.filename) }}" alt="{{ pic.filename }}" height="200px" width="400px">
+        </div>
+        <div class="imagecontent">
+            <p class="imageowner">{{ pic.username }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<style> 
+
+
+    #Imagegroup ,#team {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        margin-right: 2em;
+        margin-top: 2em;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15px );
+        -webkit-backdrop-filter: blur( 12px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transition: transform .2s;
+    }
+
+    .imageowner {
+        text-align: center;
+        font-family: 'Segoe UI';
+        font-weight: 500;
+        font-size: 150%;
+        color: aliceblue;
+        overflow: hidden;
+    }
+
+    .photo {
+        padding: 2% 2% 2% 2%;
+        width: 420px;
+    }
+
+    .image:hover {
+        transform: scale(1.5);
+        z-index: 1;
+    }
+
+
+
+</style>
+{% endblock %}
