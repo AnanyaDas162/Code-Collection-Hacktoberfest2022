@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+#search-bar {
+  height: 4.5vh;
+  border-radius: 43px;
+  width: calc(100% - 0px);
+  margin: 0.8em;
+  background-color: #7c7c7c2b;
+  color: whitesmoke;
+  border: none;
+  font-size: 120%;
+  padding: 10px;
+}
+#search-bar:hover {
+  border: 2px solid cyan;
+}
+#search-btn {
+  width: 1.8em;
+  height: 1.8em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+#btn {
+  border-radius: 50%;
+  background: none;
+  transition: 0.2s ease-in-out;
+}
+#btn:hover {
+  cursor: pointer;
+  background-color: #7c7c7c6b;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://source.unsplash.com/random/1500x700?weather");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  /* font-size: 120%; */
+}
+.container {
+  background-color: #000000d0;
+  padding: 2em;
+  border-radius: 37px;
+  width: 100%;
+  max-width: 480px;
+  margin: 1em;
+  font-family: "Source Code Pro", monospace;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.decription,
+.humidity,
+.wind, 
+.lat,
+.lon,
+.feels_like{
+  margin: 5px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.humidity {
+  margin-top: 15px;
+}
