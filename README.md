@@ -1,13 +1,17 @@
 # Code-Collection-hacktoberfest2022
 This repository is for everyone who wants to participate in Hacktoberfest 2022. 
 <br>
+<hr>
 <h1>Hacktober Fest 2022 For Everyone!👋👋</h1>
 <br>
-<img src = "https://github.com/AnanyaDas162/LGMVIP-WEBDEV/blob/main/Images/download.jfif" alt= "Its time to contribute!!" height = "100%" width = "100%">
+<img src = "https://res.cloudinary.com/practicaldev/image/fetch/s--gKY67eoS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vi4cljwnfj47xh84arho.png" alt= "Its time to contribute!!" height = "100%" width = "100%">
+<br>
 <h1>🎖️🎖️Rewards ::🎖️🎖️</h1>
 <h6>You can get awesome goodies like T-Shirt and some stickers for FREE!!!🤩🤩</h6>
+<hr>
 <h1>👨‍💻👩‍💻Upload your Projects or DSA related Programs in any Language👨‍💻👩‍💻</h1>
 <h6>Use this project to make your first contribution to an open source project on GitHub!!</h6>
+<hr>
 <br>
 <h1>What is Hacktoberfest?</h1>
 <h6>Hacktoberfest is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open source projects.</h6>
@@ -21,14 +25,14 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
 <br>
 <h1>How to participate??🤔🤔</h1>
 <h3>👇👇Steps to follow:👇👇</h3>
-<h3>1. Register for Hacktoberfest</h3>
+<h4>1. Register for Hacktoberfest</h4>
 <a href="https://hacktoberfest.com/">Register Here</a>
-<h3>2. Add Project/Program in any Language you like:</h3>
+<h4>2. Add Project/Program in any Language you like:</h4>
 <h6>Add any of your simple or complex Project/Program in any language you like in this repository by clicking "Add File -> Create new File".</h6>
 
-<h3>4. Create Pull Request:</h3>
+<h4>3. Create Pull Request:</h4>
 <h6>Once you have completed these steps, you are ready to start contributing by clicking on Create Pull Request.</h6>
-<h3>5. Give this Project a Star:</h3>
+<h4>4. Give this Project a Star:</h4>
 <h6>If you liked working on this project, please share this project as much as you can and star this project to help as many people in opensource as you can.</h6>
 <h1>📝📝Notes :: 📝📝</h1>
 <h6>1. Don't Create Pull Request to update "readme.md" File.</h6>
@@ -48,5 +52,6 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
   <img src="https://contrib.rocks/image?repo=AnanyaDas162/Data-Structures-Algorithms-And-any-other-project-Hacktoberfest2022" />
 </a>
 <h6>Thanks for contributing. It's an amazing experience to collaborate with you all!</h6>
+<h6>Thanks for being a part of the github community :)<h6>
 <br>
 <img src = "https://github.com/AnanyaDas162/LGMVIP-WEBDEV/blob/main/Images/code.avif" >
