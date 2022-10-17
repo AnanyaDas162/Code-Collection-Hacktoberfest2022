@@ -1,0 +1,120 @@
+/* CSS reseet */
+body {
+    font-family: "Tapestry", cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url("background.jpg");
+    /* height: 454px; */
+  }
+  .header {
+    position: sticky;
+    top: 0px;
+  }
+  /* for left container */
+  .left {
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid brown; */
+  }
+  .left img {
+    /* margin: auto; */
+    width: 75px;
+  }
+  .left div {
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* for mid container */
+  .mid {
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    /* border: 2px solid green; */
+  }
+
+  /* for right container */
+  .right {
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    /* border: 2px solid red; */
+  }
+  .btn {
+    font-family: "Tapestry", cursive;
+    margin: 0px 9px;
+    background-color: brown;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: gray;
+    color: black;
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .navbar li {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .navbar li a {
+    font-size: medium;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 27px 5px;
+  }
+
+  .navbar li a:hover,
+  navbar li a:active {
+    text-decoration: underline;
+    color: red;
+  }
+
+  /* for landing page */
+  .container {
+    color: white;
+    /* border: 2px solid red; */
+    margin: 25px 30px;
+    padding: 180px;
+    width: 30%;
+    /* border-radius: 25px; */
+  }
+
+  /* for from */
+  .form input {
+    font-family: "Tapestry", cursive;
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 1px;
+    /* border: 2px solid red; */
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 9px;
+  }
+  .container h1 {
+    text-align: center;
+    color: rgb(22, 117, 200);
+    margin-left: 70px;
+    margin-bottom: 35px;
+  }
+  .container h2 {
+    text-align: center;
+    color:rgb(203, 81, 20);
+    margin-left: 70px;
+    margin-bottom: 35px;
+  }
+  .container button {
+    display: block;
+    width: 50%;
+    margin-left: 96px;
+  }
