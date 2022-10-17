@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit & Fine</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Send+Flowers&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- for logo -->
+      <div class="left">
+        <img src="logo.jpg" alt="" />
+        <div>Fit & Fine</div>
+      </div>
+      <!-- for navigation menu -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- for some buttons -->
+      <div class="right">
+        <button class="btn">Contact us</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Want to be Fit & Fine???</h1>
+      <h2>Join our Gym noww!!!</h2>
+      <form action="noaction.php">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="myName"
+            id="name"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <br />
+        <div>
+          Gender--> Male: <input type="radio" name="myGender" /> Female:
+          <input type="radio" name="myGender" /> Other:
+          <input type="radio" name="myGender" />
+        </div>
+        <br />
+        <div>
+          <label for="date">Date of birth:</label>
+          <input type="date" Date="myDate" id="date" />
+        </div>
+        <br />
+        <div>
+          <label for="number">Enter your Phone Number:</label>
+          <input
+            type="text"
+            name="mynumber"
+            id="number"
+            placeholder="Enter your Phone Number"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Enter your Email-id:</label>
+          <input
+            type="email"
+            name="myemail"
+            id="email"
+            placeholder="Enter your email-id"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Text">Why you want to join the Gym?</label>
+
+          <textarea name="myTextArea" id="Text" cols="50" rows="10"></textarea>
+        </div>
+        <br />
+        <div>
+          <!-- <input type="submit" value="Submit now" /> -->
+          <input type="reset" value="Reset now" />
+        </div>
+        <br />
+        <button class="btn">Submit</button>
+        <marquee behavior="" direction="right">Closed in Sundays</marquee>
+      </form>
+    </div>
+  </body>
+</html>
