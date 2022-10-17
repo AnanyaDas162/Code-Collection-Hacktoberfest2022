@@ -1,0 +1,24 @@
+int leastBricks(vector<vector<int>>& wall) {
+        
+        map<int,int> m;
+        for(auto arr:wall)
+        {
+            int sum=0;
+            for(int j=0;j<arr.size();j++)  //har row ka prefix sum nikalte rho 
+            {
+                sum+=arr[j];
+                
+//bas total sum mat dalo map me kuki vo sbka hi same hai vaha se hum cross hi nahi kr skte
+                if(j!=arr.size()-1)  
+                m[sum]++;
+            }
+        }
+        int maxo=0;
+        for(auto i:m)
+             maxo=max(maxo,i.second);  
+        
+        
+        //jo prefix sum max aara bht rows me vaha se jayege agar k rows me 5 prefix sum aa rha aur 8 rows hai to hum 5 value se jayege k rows me hum bricks ko nahi katege baaki bchi hui rows me bricks ko katte hue jayege (8-k)  
+        
+        return wall.size()-maxo;
+    }
