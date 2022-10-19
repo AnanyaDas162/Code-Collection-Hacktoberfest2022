@@ -48,5 +48,6 @@ This repository is for everyone who wants to participate in Hacktoberfest 2022.
   <img src="https://contrib.rocks/image?repo=AnanyaDas162/Data-Structures-Algorithms-And-any-other-project-Hacktoberfest2022" />
 </a>
 <h6>Thanks for contributing. It's an amazing experience to collaborate with you all!</h6>
-<br>
+<br> 
+<h6> I am sorry to say. 😔😔 But currently this repository is excluded from Hacktoberfest 2022😔😔</h6>
 <img src = "https://github.com/AnanyaDas162/LGMVIP-WEBDEV/blob/main/Images/code.avif" >
