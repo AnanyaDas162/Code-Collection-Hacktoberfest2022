@@ -1,0 +1,17 @@
+<html>
+<head>
+<h2>Cell that spans two row:<h2>
+<table border="2">
+<tr>   
+<th>Name:</th>
+<td>Ankush</td>
+</tr>
+<tr>    
+<th rowspan="2">Contact:</th>
+<td> email:ankush23@gmail.com<td/>
+</tr>
+<tr>    <td> Phone:55577854</td>
+</tr>
+</table>
+</body>
+</html>
