@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+    @apply px-4 h-12 my-2 border border-2 border-gray-200 rounded-lg outline-blue-400;
+}
