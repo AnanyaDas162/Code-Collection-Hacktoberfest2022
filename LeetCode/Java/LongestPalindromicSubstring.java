@@ -1,34 +1,39 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
 class Solution {
-    public String longestPalindrome(String s) {
-        if (s.length() == 0) {
-            return s;
-        }
-        int n = s.length();
-        boolean table[][] = new boolean[n][n];
-        int maxLength = 1;
-        for (int i = 0; i < n; ++i) {
-            table[i][i] = true;
-        }
-        int start = 0;
-        for (int i = 0; i < n - 1; i++) {
-            if (s.charAt(i) == s.charAt(i + 1)) {
-                table[i][i + 1] = true;
-                start = i;
-                maxLength = 2;
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        str = sc.nextLine();
+        System.out.println("Longest substring is : " + s.longestPalindrome(str));
+        System.out.println("Longest Palindromic substring is : " + s.longestPalindrome(str));
+        sc.close();
+    }
+    
+    private boolean Palindrome(String str) {
+        str = str.toLowerCase();
+        String rev = "";
+        for (int i = str.length() - 1; i > -1; i--) rev += str.charAt(i);
+        if (str.equals(rev)) return true;
+        return false;
+    }
+    
+    public String longestPalindrome(String str) {
+        // brute-force approach using Java Collections
+        ArrayList<String> al = new ArrayList<>();
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i + 1; j < str.length() - 1; j++) {
+                String sub = str.substring(i, j);
+                boolean flag = Palindrome(sub);
+                if (flag == true) al.add(sub);
             }
         }
-        for (int length = 3; length <= n; length++) {
-            for (int i = 0; i < n - length + 1; i++) {
-                int j = i + length - 1;
-                if (table[i + 1][j - 1] == true && s.charAt(i) == s.charAt(j)) {
-                    table[i][j] = true;
-                    if (length > maxLength) {
-                        maxLength = length;
-                        start = i;
-                    }
-                }
-            }
-        }
-        return s.substring(start, start + maxLength);
+        return true;
+        Collections.sort(al);
+        String res = al.get(al.size() - 1);
+        if (res.length() < 2) res = "none";
+        return res;
     }
 }
